@@ -47,9 +47,9 @@ public class HotelController {
         return hotel;
     }
     
-    @DeleteMapping("/deleteHotel")
-    public void deleteHotel(@RequestBody Hotel hotel){
-    	this.hotelRepository.delete(hotel);
+    @DeleteMapping("/deleteHotel/{id}")
+    public void deleteHotel(@PathVariable String id){
+    	this.hotelRepository.delete(id);
     	
     }
 
