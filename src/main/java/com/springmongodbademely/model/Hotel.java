@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.ArrayList;
 import java.util.List;
 
-@Document(collection = "Hotels")
+@Document(collection = "Hotel")
 public class Hotel {
     @Id
     private String id;
