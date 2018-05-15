@@ -21,7 +21,14 @@ public class Hotel {
     protected Hotel() {
         this.reviews = new ArrayList<>();
     }
-
+    
+    public Hotel(String name, int pricePerNight) {
+        this.name = name;
+        this.pricePerNight = pricePerNight;
+//        this.address = address;
+//        this.reviews = reviews;
+    }
+    
     public Hotel(String name, int pricePerNight, Address address, List<Review> reviews) {
         this.name = name;
         this.pricePerNight = pricePerNight;
